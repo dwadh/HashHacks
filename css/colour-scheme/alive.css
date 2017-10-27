@@ -1,0 +1,181 @@
+body {
+	background: #CB356B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/****** HEADER *******/
+
+.mobilenav {
+	background: #CB356B;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #BD3F32, #CB356B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+a:hover {
+	color: #b02e35;
+}
+
+
+/****** ABOUT SECTION *******/
+
+.about-content h1, .contact-content h1 {
+	color: #f0f0f0;
+}
+
+.social-overlay {
+	background: #000;
+}
+
+.social-overlay i {
+	color: #f0f0f0;
+}
+
+.btn-custom-services {
+	background: #000;
+}
+
+
+.about-content p, .video-section h1 {
+	color: #f0f0f0;
+}
+
+.section-title {
+	color: #fff;
+	font-weight: bold;
+}
+
+.video-controls h2 {
+	color: #f0f0f0;
+}
+
+.section-title:before {
+	background-color: #f0f0f0;
+}
+
+.bckg, .bckgr {
+	background-color: #000;
+}
+
+/***** SERVICE SECTION ******/
+
+.normal-section-subtitle, .service-box h4, .skew-box i {
+	color: #fff;
+}
+
+.skew-box {
+	border-right: 3px solid #f0f0f0;
+}
+
+.service-box p {
+	color: #f0f0f0;
+}
+
+/***** ADVENTAGES SECTION *****/
+.adventages-content h1, .reason-box h4 {
+	color: #f0f0f0;
+}
+
+.number-box {
+	background: #c7385c;
+	color: #f0f0f0;
+}
+
+.reason-box p {
+	font-weight: bold;
+	color: #c43a4f;
+}
+
+/****** OUR TEAM SECTION ******/
+.normal-section-title {
+	color: #fff;
+	font-weight: bold;
+}
+
+.normal-section-subtitle {
+	color: #f0f0f0;
+}
+
+.team-member h4 {
+	color: #ffffff;
+}
+
+.team-member p {
+	color: #f0f0f0;
+}
+
+
+/****** TESTIMONIALS ******/
+
+.text-from-client {
+	color: #f0f0f0;
+	border-left: 1px solid #f0f0f0;
+}
+
+.the-testimonial h4 {
+	color: #f0f0f0;
+}
+
+.the-testimonial h4 small {
+	color: #b02e35;
+}
+
+
+/******* PORTFOLIO SECTION ********/
+
+.portfolio-filter li.active {
+	background: #000;
+	border: 1px solid #000;
+}
+
+.portfolio-filter li {
+	border: 1px solid #000;
+	color: #000;
+}
+
+.portfolio-filter li:hover {
+	background: #000;
+	border: 1px solid #000;
+	color: #fff;
+}
+
+.item-b {
+	background: #000;
+}
+
+/******* CONTACT *******/
+.contact-class label {
+	color: #f0f0f0;
+}
+
+.normal-input {
+	color: #f0f0f0;
+}
+
+.submit-button {
+	background: #000;
+}
+
+
+.submit-button:hover {
+	background: #b02e35;
+}
+
+.scrollToTop {
+	background: #000;
+}
+
+/***** COMING SOON ****/
+
+#subscribe p {
+	color: #f0f0f0;
+}
+
+.button-subscribe {
+	background: #000;
+}
+
+.button-subscribe:hover  {
+	background: #b02e35;
+}

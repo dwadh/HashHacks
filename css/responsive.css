@@ -1,0 +1,357 @@
+/*
+	Name: AYA;
+	Discription: Creative Agency Template;
+	Author: UnomiaThemes - Tsocho Tsochev, Iliyan Konakchiev;
+	Version: 1.0.0;
+*/
+
+
+
+@media screen and (max-width: 991px) {
+	.title {
+		font-size: 48px;
+		width: 60%;
+	}
+
+	.btn-custom-services {
+		font-size: 12px;
+		padding: 9px 19px;
+	}
+
+	.icon {
+		display: block;
+	}
+
+	.menu ul {
+		display: none;
+	}
+
+	.filtr-item {
+		width: 50%;
+	}
+
+	.normal-input {
+		width: 100%;
+	}
+
+	.errorpage .title {
+		font-size: 120px;
+	}
+
+	.errorpage p {
+		font-size: 36px;
+	}
+
+	.countdown div {
+		font-size: 90px;
+	}
+
+	.countdown div span {
+		font-size: 20px;
+	}
+
+	.input-fields-subscribe {
+		width: 100%;
+	}
+
+	.about-content, .adventages-content, .contact-content {
+		width: 75%;
+	}
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+	
+
+	.adventages-content h1 {
+		font-size: 37px;
+	}
+
+	.bck, .bckg, .bckgr, .contact-bck {
+		height: 100vh;
+	}
+
+	.number-box {
+		width: 20px;
+		height: 20px;
+		padding: 0px;
+	}
+
+	.reason-box h4 {
+		font-size: 16px;
+		left: 7px;
+	}
+
+	.reason-box p {
+		left: 25px;
+		font-size: 14px;
+	}
+
+	.filtr-item {
+		width: 100%;
+	}
+
+
+	.text-from-client {
+		font-size: 14px;
+	}
+
+	.normal-section-subtitle {
+		font-size: 32px;
+	}
+
+	.errorpage .title {
+		font-size: 110px;
+	}
+
+	.errorpage p {
+		font-size: 30px;
+	}
+
+	.countdown div {
+		font-size: 60px;
+	}
+
+	.countdown div span {
+		font-size: 18px;
+	}
+
+	#subscribe p {
+		font-size: 18px;
+	}
+
+}
+
+@media screen and (max-width: 660px) {
+	
+	.service-box p {
+		left: 7px;
+		font-size: 16px;
+	}
+
+	.service-box h4 {
+		left: 7px;
+		font-size: 18px;
+	}
+
+	.adventages-content {
+		width: 75%;
+	}
+
+	.adventages-content h1 {
+		font-size: 26px;
+	}
+
+	.number-box {
+		width: 20px;
+		height: 20px;
+		padding: 0px;
+	}
+
+	.reason-box h4 {
+		font-size: 14px;
+		left: 7px;
+	}
+
+	.reason-box p {
+		left: 25px;
+		font-size: 14px;
+	}
+
+	.video-controls h2 {
+		font-size: 25px;
+	}
+
+	.errorpage .title {
+		font-size: 100px;
+	}
+
+	.errorpage p {
+		font-size: 24px;
+	}
+
+	.countdown div {
+		font-size: 40px;
+	}
+
+	.countdown div span {
+		font-size: 12px;
+		padding-left: 10px;
+		margin-left: -5px;
+	}
+
+	#subscribe p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.title {
+		font-size: 32px;
+	}
+
+	.about-content p {
+		font-size: 14px;
+	}
+
+	.about-content h1, .contact-content h1 {
+		font-size: 22px;
+	}
+
+	.service-box p {
+		left: 7px;
+		font-size: 12px;
+	}
+
+	.service-box h4 {
+		left: 7px;
+		font-size: 15px;
+	}
+	
+	.skew-box {
+		width: 50px;
+	}
+
+	.skew-box i, .normal-section-subtitle {
+		font-size: 30px;
+	}
+
+	.adventages-content {
+		width: 75%;
+	}
+
+	.adventages-content h1 {
+		font-size: 22px;
+	}
+
+	.number-box {
+		width: 20px;
+		height: 20px;
+		padding: 0px;
+	}
+
+	.reason-box h4 {
+		font-size: 12px;
+		left: 7px;
+	}
+
+	.reason-box p {
+		left: 25px;
+		font-size: 12px;
+	}
+
+	.the-testimonial {
+		padding: 10px;
+	}
+
+	.text-from-client, .the-testimonial h4 small {
+		font-size: 12px;
+	}
+
+	.client-info {
+		width: 100%;
+	}
+
+	.the-testimonial h4 {
+		font-size: 19px;
+	}
+
+	.the-team-member-photo {
+		width: 150px;
+		height: 150px;
+	}
+
+	.team-member h4 {
+		font-size: 35px;
+	}
+
+	.errorpage .title {
+		font-size: 80px;
+	}
+
+	.errorpage p {
+		font-size: 20px;
+	}
+
+	.countdown div {
+		font-size: 32px;
+	}
+
+	.countdown div span {
+		font-size: 10px;
+		padding-left: 10px;
+		margin-left: -5px;
+	}
+
+	.coming h2 {
+		font-size: 32px;
+	}
+
+	#subscribe p {
+		font-size: 14px;
+	}
+}
+
+
+@media screen and (max-height: 360px) and (orientation: landscape) {
+
+	.about-content h1, .contact-content h1 {
+		font-size: 24px;
+	}
+
+	.about-content p {
+		font-size: 14px;
+	}
+
+	.normal-section-subtitle {
+		margin: 10px 0;
+	}
+
+	.input-fields {
+		margin: 5px 0;
+	}
+
+	.submit-button {
+		margin-top: 15px;
+	}
+
+	.reason-box {
+		float: left;
+		margin-right: 25px;
+	}
+
+	.reason-box p {
+		font-size: 10px;
+		left: 0;
+	}
+
+	.reason-box h4 {
+		font-size: 12px;
+		left: 0;
+	}
+
+	.section-title {
+		font-size: 10px;
+	}
+
+	.adventages-content {
+		width: 90%;
+	}
+
+	.mobilenav li {
+		padding: 5px;
+	}
+
+	.coming h2 {
+		font-size: 32px;
+	}
+
+	.logo img {
+		width: 70px;
+	}
+}
+
+
+
