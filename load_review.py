@@ -24,7 +24,7 @@ for i in ab:
 	rev = str(i[5])
 	crit = str(int(i[4]) + 1)
 	rev_list.append(rev + '#' + crit)
-print (rev_list)
+#print (rev_list)
 
 print (json.dumps(D))
 sys.exit()
