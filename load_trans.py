@@ -17,10 +17,24 @@ for i in ab:
 	a = ''
 	cur.execute('SELECT id, cid, uid, amt, share, datee from transac where id = ?',(i,))
 	data = cur.fetchone()
+	cid = data[1]
+	uid = data[2]
+	cur.execute('SELECT name FROM company WHERE id = ?', (cid,))
+	c_name = str(cur.fetchone()[0])
+	cur.execute('SELECT uname FROM investor WHERE id = ?', (uid,))
+	u_name = str(cur.fetchone()[0])
 	for t in data:
-		r+=1
-		if r==6 and t == 'None':
+		if r==1:
+			a+=str(c_name)
+			r+=1
+			a+='#'
 			continue
+		if r==2:
+			a+=str(u_name)
+			a+='#'
+			r+=1
+			continue
+		r+=1
 		a+=str(t)
 		a+='#'
 	comp = str(data[1])
