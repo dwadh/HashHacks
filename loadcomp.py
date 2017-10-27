@@ -7,7 +7,7 @@ s=1
 db=sqlite3.connect('details')
 cur=db.cursor()
 name=""
-cur.execute('SELECT id, name, desc, req, left, trans from company where id = ?',(str(sys.argv[1]),))
+cur.execute('SELECT id, name, desc, req, left, trans, logo from company where id = ?',(str(sys.argv[1]),))
 ab=cur.fetchall()
 
 r=0
