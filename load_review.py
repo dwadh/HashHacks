@@ -2,7 +2,7 @@ import sqlite3
 import json
 import sys
 a=''
-lst=[]
+rev_list=[]
 s=1
 db=sqlite3.connect('details')
 cur=db.cursor()
@@ -21,5 +21,10 @@ for i in ab:
 		a+='#'
 	D[s]=a
 	s+=1
+	rev = str(i[5])
+	crit = str(int(i[4]) + 1)
+	rev_list.append(rev + '#' + crit)
+print (rev_list)
+
 print (json.dumps(D))
 sys.exit()
