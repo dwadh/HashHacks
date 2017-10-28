@@ -1,0 +1,4 @@
+Progress as yet:
+Updated front end code for investor profile page
+Created Database
+Completed code for loading compnay profile, investor transactions
