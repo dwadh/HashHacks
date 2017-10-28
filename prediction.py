@@ -57,9 +57,7 @@ data = pd.read_csv("final_clean_data.csv")
 data.head()
 
 le = LabelEncoder()
-le.fit([y for x in data.get_values() for y in x])
 
-le.transform([data.get_value(0, data.columns[0])])
 del data['Unnamed: 0']
 
 data['Average.size.of.companies.worked.for.in.the.past'] = le.fit_transform(data['Average.size.of.companies.worked.for.in.the.past'])
@@ -85,5 +83,7 @@ clf = svm.SVC(kernel ='linear',C=5)     #SVC is cupport vector classifier
 X_train,X_test, Y_train,Y_test = cross_validation.train_test_split(data,target,test_size = 0.2)
 X_train.shape
 clf.fit(X_train,Y_train)
-prediction = clf.predict(X_test)
+pred = [noofcof, noofadv, noorep, tsize, noorep, avgsize, base, focus, mob, reach, workcomp, foconsdata, crowdfund,
+mlbusiness]
+prediction = clf.predict(pred)
 print(clf.score(X_test,Y_test))
