@@ -88,7 +88,7 @@
         <div class="row">
             <div class="col-md-4"> <img src="img/investor.jpg" alt="investor picture" class="img-thumbnail"> </div>
             <div class="col-md-8">
-                <h1 style="text-align: center">Company Name</h1>
+                <h1 style="text-align: center">Investor Name</h1>
                 <table class="table table-bordered">
                     <thead style="font-weight: bold">
                         <td>Id</td>
