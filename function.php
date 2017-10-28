@@ -54,10 +54,27 @@ function investor(){
         echo "
             <tbody>
                 <td>$id</td>
-                <td>$name<td>
+                <td>$name</td>
                 <td>$amt</td>
                 <td>$share</td>
                 <td>$profit</td>
+            </tbody>
+        ";
+    }
+}
+
+function listComp(){
+    $result=json_decode(exec('python load_trans.py 1'),true);
+    foreach($result as &$value)
+    {
+        list($id,$name)=explode("#",$value);
+        $id = $id;
+        $name = $name;
+        
+        echo "
+            <tbody>
+                <td>$id</td>
+                <td>$name</td>
             </tbody>
         ";
     }
