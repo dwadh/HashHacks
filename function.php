@@ -1,17 +1,19 @@
 <?php session_start();
 
-function companyDetails($id){
+function companyDetails(){
     
-   $result=json_decode(exec('loadcomp.py'),true);
+   $result=json_decode(exec('python loadcomp.py 1'),true);
    
     
-        list($id,$name,$desc, $req, $left, $trans)=explode("#",$result[1]);
+        list($id,$name,$desc, $req, $left, $trans, $logo)=explode("#",$result[0]);
         
         $id =$id;
         $name=$name;
         $desc = $desc;
         $req = $req;
         $left = $left;
+        $trans = $trans;
+        $logo = $logo;
        
 echo "  <section class='video'>
             <div class='overlay'></div>
@@ -21,7 +23,7 @@ echo "  <section class='video'>
             <div class='row'>
                <div  class='col-md-4 col-sm-12 col-xs-12'>
                   <div class='row'>
-                     <img src='img/logo.png' alt='Logo'>
+                     <img src='$logo' alt='Logo'>
                   </div>
                   <div class='row'>
                      <div  class='col-md-4 col-md-offset-5 col-sm-12 col-xs-12'>
@@ -34,6 +36,18 @@ echo "  <section class='video'>
                   $desc
                   </p>
                </div>
+            </div>
+            <div class = 'row'>
+                <div class = 'col-md-4'>
+                <h3>$req</h3>
+                </div>
+                <div class = 'col-md-4'>
+                <h3>$left</h3>
+                </div>
+                <div class = 'col-md-4'>
+                <h3>$trans</h3>
+                </div>
+            </div>
             </div>
       </section>";
 }
@@ -63,24 +77,6 @@ function investor(){
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function listComp(){
     $result=json_decode(exec('python load_trans.py 1'),true);
     foreach($result as &$value)
@@ -97,5 +93,4 @@ function listComp(){
         ";
     }
 }
-
 ?>

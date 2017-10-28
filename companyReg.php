@@ -85,27 +85,27 @@
     </header>
     <div class="container" style="padding-top: 100px">
             <h1 style = "text-align: center">COMPANY REGISTRATION</h1>
-            <form action = "formSubmit.php" method = "GET">
+<form action = "formSubmit.php" method = "POST">
                <div class="row">
                 <div class="form-group">
                     <label for="cname">Company Name</label>
-                    <input type="text" class="form-control" id="cname" placeholder="Name"> </div>
+                    <input type="text" class="form-control" name="cname" id = "cname" placeholder="Name"> </div>
                 <div class="form-group">
                     <label for="desc">Description</label>
-                    <textarea class="form-control" id="desc" rows = 5></textarea> </div>
+                    <textarea class="form-control" name="desc" rows = 5></textarea> </div>
                 <div class="form-group">
                    <div class = "row">
                        <div class = "col-md-2">
                            <label for="reqfund">Required Funding</label>
                        </div>
                        <div class = "col-md-4">
-                           <input type="integer" class="form-control" id="reqfund" placeholder="">
+                           <input type="integer" class="form-control" name="reqfund" placeholder="">
                        </div>
                        <div class = "col-md-2">
                            <label for="currprofit">Current Profit</label>
                        </div>
                        <div class = "col-md-4">
-                           <input type="integer" class="form-control" id="currprofit" placeholder="">
+                           <input type="integer" class="form-control" name="currprofit" placeholder="">
                        </div>
                    </div>
                 </div>
@@ -115,13 +115,13 @@
                            <label for="noofcof">Number of Co-Founders: </label>
                        </div>
                        <div class = "col-md-4">
-                           <input type="integer" class="form-control" id="noofcof" placeholder="">
+                           <input type="integer" class="form-control" name="noofcof" placeholder="">
                        </div>
                        <div class = "col-md-2">
                            <label for="noofadv">Number of Advisors: </label>
                        </div>
                        <div class = "col-md-4">
-                           <input type="integer" class="form-control" id="noofadv" placeholder="">
+                           <input type="integer" class="form-control" name="noofadv" placeholder="">
                        </div>
                    </div>
                 </div>
@@ -132,13 +132,13 @@
                            <label for="tsize">Team Size (Senior Leadership)</label>
                        </div>
                        <div class = "col-md-4">
-                           <input type="integer" class="form-control" id="tsize" placeholder="">
+                           <input type="integer" class="form-control" name="tsize" placeholder="">
                        </div>
                        <div class = "col-md-2">
                            <label for="noofrep">Number of Repeat Investors: </label>
                        </div>
                        <div class = "col-md-4">
-                           <input type="integer" class="form-control" id="noofrep" placeholder="">
+                           <input type="integer" class="form-control" name="noofrep" placeholder="">
                        </div>
                    </div>
                 </div>
@@ -149,7 +149,7 @@
                            <label for="avgsize">Average size of Companies Worked for in the Past: </label>
                        </div>
                        <div class = "col-md-3">
-                           <select id="avgsize" class="form-control">
+                           <select name="avgsize" class="form-control">
                               <option>Small</option>
                               <option>Medium</option>
                               <option>Large</option>
@@ -159,7 +159,7 @@
                            <label for="base">Company Base: </label>
                        </div>
                       <div class = "col-md-3">
-                           <select id="base" class="form-control">
+                           <select name="base" class="form-control">
                               <option>Product Based</option>
                               <option>Service Based</option>
                               <option>Both</option>
@@ -173,7 +173,7 @@
                            <label for="focus">Focus </label>
                        </div>
                        <div class = "col-md-3">
-                           <select id="focus" class="form-control">
+                           <select name="focus" class="form-control">
                               <option>Public</option>
                               <option>Private</option>
                             </select>
@@ -182,7 +182,7 @@
                            <label for="mob">Mobility </label>
                        </div>
                       <div class = "col-md-3">
-                           <select id="mob" class="form-control">
+                           <select name="mob" class="form-control">
                               <option>Cloud</option>
                               <option>Platform</option>
                             </select>
@@ -195,7 +195,7 @@
                            <label for="reach">Reach </label>
                        </div>
                        <div class = "col-md-3">
-                           <select id="reach" class="form-control">
+                           <select name="reach" class="form-control">
                               <option>Local</option>
                               <option>Global</option>
                             </select>
@@ -208,7 +208,7 @@
                            <label for="workcomp">Worked in Companies </label>
                        </div>
                       <div class = "col-md-3">
-                           <select id="workcomp" class="form-control">
+                           <select name="workcomp" class="form-control">
                               <option>Yes</option>
                               <option>No</option>
                             </select>
@@ -217,7 +217,7 @@
                            <label for="focconsdata">Focus on consumer data </label>
                        </div>
                       <div class = "col-md-3">
-                           <select id="focconsdata" class="form-control">
+                           <select name="focconsdata" class="form-control">
                               <option>Yes</option>
                               <option>No</option>
                             </select>
@@ -230,7 +230,7 @@
                            <label for="crowdfund">Crowd funding based </label>
                        </div>
                       <div class = "col-md-3">
-                           <select id="crowdfund" class="form-control">
+                           <select name="crowdfund" class="form-control">
                               <option>Yes</option>
                               <option>No</option>
                             </select>
@@ -239,7 +239,7 @@
                            <label for="mlbusiness">Machine Learning based business </label>
                        </div>
                       <div class = "col-md-3">
-                           <select id="mlbusiness" class="form-control">
+                           <select name="mlbusiness" class="form-control">
                               <option>Yes</option>
                               <option>No</option>
                             </select>

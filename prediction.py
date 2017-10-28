@@ -4,8 +4,11 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn import svm
+import sys
+import sqlite3
 
-
+db = sqlite3.connect('details')
+cur = db.cursor()
 company = sys.argv[1]
 desc = sys.argv[2]
 reqfund = sys.argv[3]
@@ -33,8 +36,8 @@ cur.execute('''INSERT INTO company (name,desc,req,left,\
 	trans,profit,logo,no_coof,no_adv,sen_lead,\
 	rep_inv,avg_cpast,pors,porpv,corp,logp,top_comp,\
 	cust_data,crowd,ml,succ,conf) VALUES (?,?,?,?,?,\
-	?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''', (company,desc,reqfund,reqfund\
-		,trans,logo,currprofit,noofcof,nooadv,tsize,noorep,avgsize,base,focus\
+	?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''', (company,desc,reqfund,reqfund\
+		,trans,logo,currprofit,noofcof,noofadv,tsize,noorep,avgsize,base,focus\
 		,mob,reach,workcomp,foconsdata,crowdfund,mlbusiness,succ,conf,))
 
 
