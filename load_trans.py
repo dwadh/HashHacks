@@ -23,6 +23,7 @@ for i in ab:
 	c_name = str(cur.fetchone()[0])
 	cur.execute('SELECT uname FROM investor WHERE id = ?', (uid,))
 	u_name = str(cur.fetchone()[0])
+	r=0
 	for t in data:
 		if r==1:
 			a+=str(c_name)
