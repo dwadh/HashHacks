@@ -82,7 +82,11 @@ clf = svm.SVC(kernel ='linear',C=5)     #SVC is cupport vector classifier
 X_train,X_test, Y_train,Y_test = cross_validation.train_test_split(data,target,test_size = 0.2)
 X_train.shape
 clf.fit(X_train,Y_train)
-pred = [[noofcof, noofadv, noorep, tsize, noorep, avgsize, base, focus, mob, reach, workcomp, foconsdata, crowdfund,
+pred = [[noofcof, noofadv, tsize, noorep, avgsize, base, focus, mob, reach, workcomp, foconsdata, crowdfund,
 mlbusiness]]
+trust = clf.score(X_test,Y_test)
 prediction = clf.predict(pred)
+cur.execute('''UPDATE company SET conf = ?, succ = ? WHERE name = ? ''', (trust*100,int(prediction[0]),company,))
+db.commit()
+
 print(clf.score(X_test,Y_test))

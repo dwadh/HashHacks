@@ -17,5 +17,5 @@ foreach($result as &$value)
     
 }
 $result= exec('python sentiment.py '. $val);
-echo "<br><br><br>The Trust level is : " . $result;
+echo "<br><br><br>The Trust level is : " . $result. "%";
 ?>
