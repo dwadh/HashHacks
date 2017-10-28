@@ -36,6 +36,7 @@ for i in rev_list:
     score+= polarity*int(critic)
     total += int(critic)
 final_score = score/total
+final_score = (final_score+1)*50
 print (final_score)
 
 
