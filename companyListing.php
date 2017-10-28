@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <!-- -Page Title- -->
-      <title>investorCompany</title>
+      <title>Listing</title>
       <!-- ====== -Google Fonts- ====== -->
       <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
       <!-- ====== -End Google Fonts- ====== -->
@@ -84,22 +84,16 @@
          </div>
       </header>
       
-      <div class="container" style = "padding-top: 200px">
+      <div class="container" style = "padding-top: 150px">
         <div class="row">
-            <div class="col-md-4"> <img src="img/investor.jpg" alt="investor picture" class="img-thumbnail"> </div>
-            <div class="col-md-8">
-                <h1 style="text-align: center">Investor Name</h1>
-                <table class="table table-bordered">
+                   <h1 style = "text-align: center">List of Companies</h1>
+                    <table class="table table-bordered">
                     <thead style="font-weight: bold">
                         <td>Id</td>
                         <td>Company Name</td>
-                        <td>Amount Invested</td>
-                        <td>Percentage Share</td>
-                        <td>Return</td>
                     </thead>
-                    <?php investor(); ?>
-                </table>
-            </div>
+                    <?php listComp(); ?>
+            </table>
         </div>
     </div>
       

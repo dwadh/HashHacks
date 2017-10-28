@@ -19,7 +19,7 @@ $crowdfund=$_GET['crowdfund'];
 $mlbusiness=$_GET['mlbusiness'];
 
 
-$result=exec('python smail.py '.$cname. ' '.$desc. ' '.$reqfund. ' '.$noofcof ' '.$noofadv ' '.$tsize. ' '.$noofrep. ' '.$avgsize. ' '.$base. ' '.$focus. ' '.$mob. ' '.$reach. ' '.$workcomp. ' '.$foconsdata. ' '.$crowdfund ' '.$mlbusiness);
+$result=exec('python prediction.py '.$cname. ' '.$desc. ' '.$reqfund. ' '.$noofcof ' '.$noofadv ' '.$tsize. ' '.$noofrep. ' '.$avgsize. ' '.$base. ' '.$focus. ' '.$mob. ' '.$reach. ' '.$workcomp. ' '.$foconsdata. ' '.$crowdfund ' '.$mlbusiness);
 	
 
 ?>
