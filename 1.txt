@@ -1,4 +1,5 @@
 Progress as yet:
-Updated front end code for investor profile page
+Updated front end code for investor profile page, compnay profile
 Created Database
-Completed code for loading compnay profile, investor transactions
+Completed code for loading company profile, investor transactions, back end scripts for payment, reviews
+added sentiment analysis for trust factor, machine learning for success prediction
