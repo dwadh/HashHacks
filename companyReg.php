@@ -85,7 +85,7 @@
     </header>
     <div class="container" style="padding-top: 100px">
             <h1 style = "text-align: center">COMPANY REGISTRATION</h1>
-            <form>
+            <form action = "formSubmit.php" method = "GET">
                <div class="row">
                 <div class="form-group">
                     <label for="cname">Company Name</label>

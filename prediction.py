@@ -5,6 +5,51 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
 from sklearn import svm
 
+
+company = sys.argv[1]
+desc = sys.argv[2]
+reqfund = sys.argv[3]
+currprofit = sys.argv[4]
+noofcof = sys.argv[5]
+noofadv = sys.argv[6]
+noorep = sys.argv[7]
+tsize = sys.argv[8]
+noorep= sys.argv[9]
+avgsize = sys.argv[10]
+base = sys.argv[11]
+focus = sys.argv[12]
+mob = sys.argv[13]
+reach = sys.argv[14]
+workcomp = sys.argv[15]
+foconsdata = sys.argv[16]
+crowdfund = sys.argv[17]
+mlbusiness = sys.argv[18]
+logo = ''
+succ = 1
+conf = 1
+trans = ''
+
+cur.execute('''INSERT INTO company (name,desc,req,left,\
+	trans,profit,logo,no_coof,no_adv,sen_lead,\
+	rep_inv,avg_cpast,pors,porpv,corp,logp,top_comp,\
+	cust_data,crowd,ml,succ,conf) VALUES (?,?,?,?,?,\
+	?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)''', (company,desc,reqfund,reqfund\
+		,trans,logo,currprofit,noofcof,nooadv,tsize,noorep,avgsize,base,focus\
+		,mob,reach,workcomp,foconsdata,crowdfund,mlbusiness,succ,conf,))
+
+
+db.commit()
+
+
+
+
+
+
+
+
+
+
+
 data = pd.read_csv("final_clean_data.csv")
 data.head()
 
