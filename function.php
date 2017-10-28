@@ -1,11 +1,11 @@
 <?php session_start();
 
-function companyDetails(){
+function companyDetails($id){
     
-   $result=json_decode(exec('python loadcomp.py 1'),true);
+   $result=json_decode(exec('python loadcomp.py '.$id),true);
    
     
-        list($id,$name,$desc, $req, $left, $trans, $logo)=explode("#",$result[0]);
+        list($id,$name,$desc, $req, $left, $trans, $logo, $conf, $succ)=explode("#",$result[0]);
         
         $id =$id;
         $name=$name;
@@ -14,6 +14,18 @@ function companyDetails(){
         $left = $left;
         $trans = $trans;
         $logo = $logo;
+        $conf = floatval($conf);
+        $succ =$succ;
+        $link = 'review.php?comp='.$id;
+    
+        if($succ == '1')
+        {
+            $val = 'Success!';
+        }
+        else
+        {
+            $val = 'Failure';
+        }
        
 echo "  <section class='video'>
             <div class='overlay'></div>
@@ -26,9 +38,21 @@ echo "  <section class='video'>
                      <img src='$logo' alt='Logo'>
                   </div>
                   <div class='row'>
-                     <div  class='col-md-4 col-md-offset-5 col-sm-12 col-xs-12'>
-                        <a href='#demo' data-scroll class='btn-custom-services'> Pay </a>
-                     </div>
+                     <div  class='col-md-4 col-sm-12 col-xs-12'>
+                     <form action = 'formSubmit2.php' method = 'POST'>
+                    <div class='form-group'>
+                    <label for='userid'>User Id</label>
+                    <input type='text' class='form-control' id='userid' name = 'userid'>
+                    
+                    <label for='cusid'>Company Id</label>
+                    <input type='text' class='form-control' id='cusid' name = 'cusid'>
+                    
+                    <label for='amt'>Amount</label>
+                    <input type='text' class='form-control' id='amt' name = 'amt'>
+                    </div>
+                    <input type = 'submit' value = 'INVEST'> </input>
+                    </form>
+                    </div>
                   </div>
                </div>
                <div class='col-md-8 col-sm-12 col-xs-12'>
@@ -39,14 +63,30 @@ echo "  <section class='video'>
             </div>
             <div class = 'row'>
                 <div class = 'col-md-4'>
+                </div>
+                <div class = 'col-md-4'>
+                <h3>REQUIRED:</h3>
                 <h3>$req</h3>
                 </div>
                 <div class = 'col-md-4'>
+                <h3>LEFT:</h3>
                 <h3>$left</h3>
                 </div>
+            </div>
+            
+            <div class = 'row'>
                 <div class = 'col-md-4'>
-                <h3>$trans</h3>
                 </div>
+                <div class = 'col-md-4'>
+                <h3>PREDICTED FUTURE:</h3>
+                <h4>$val with $conf % confidence</h4>
+                </div>
+                <div class = 'col-md-4'>
+            </div>
+            </div>
+            <div class = 'row'>
+                <a href = $link><button class='btn btn-default' type='submit'>Reviews</button></a>
+            </div>
             </div>
             </div>
       </section>";

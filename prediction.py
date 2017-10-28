@@ -12,21 +12,20 @@ cur = db.cursor()
 company = sys.argv[1]
 desc = sys.argv[2]
 reqfund = sys.argv[3]
-currprofit = sys.argv[4]
-noofcof = sys.argv[5]
-noofadv = sys.argv[6]
-noorep = sys.argv[7]
-tsize = sys.argv[8]
-noorep= sys.argv[9]
-avgsize = sys.argv[10]
-base = sys.argv[11]
-focus = sys.argv[12]
-mob = sys.argv[13]
-reach = sys.argv[14]
-workcomp = sys.argv[15]
-foconsdata = sys.argv[16]
-crowdfund = sys.argv[17]
-mlbusiness = sys.argv[18]
+currprofit = reqfund
+noofcof = sys.argv[4]
+noofadv = sys.argv[5]
+tsize = sys.argv[6]
+noorep= sys.argv[7]
+avgsize = sys.argv[8]
+base = sys.argv[9]
+focus = sys.argv[10]
+mob = sys.argv[11]
+reach = sys.argv[12]
+workcomp = sys.argv[13]
+foconsdata = sys.argv[14]
+crowdfund = sys.argv[15]
+mlbusiness = sys.argv[16]
 logo = ''
 succ = 1
 conf = 1
@@ -83,7 +82,11 @@ clf = svm.SVC(kernel ='linear',C=5)     #SVC is cupport vector classifier
 X_train,X_test, Y_train,Y_test = cross_validation.train_test_split(data,target,test_size = 0.2)
 X_train.shape
 clf.fit(X_train,Y_train)
-pred = [noofcof, noofadv, noorep, tsize, noorep, avgsize, base, focus, mob, reach, workcomp, foconsdata, crowdfund,
-mlbusiness]
+pred = [[noofcof, noofadv, tsize, noorep, avgsize, base, focus, mob, reach, workcomp, foconsdata, crowdfund,
+mlbusiness]]
+trust = clf.score(X_test,Y_test)
 prediction = clf.predict(pred)
+cur.execute('''UPDATE company SET conf = ?, succ = ? WHERE name = ? ''', (trust*100,int(prediction[0]),company,))
+db.commit()
+
 print(clf.score(X_test,Y_test))

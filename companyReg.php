@@ -150,9 +150,9 @@
                        </div>
                        <div class = "col-md-3">
                            <select name="avgsize" class="form-control">
-                              <option>Small</option>
-                              <option>Medium</option>
-                              <option>Large</option>
+                              <option>1</option>
+                              <option>10</option>
+                              <option>100</option>
                             </select>
                        </div>
                        <div class = "col-md-3">
@@ -160,9 +160,9 @@
                        </div>
                       <div class = "col-md-3">
                            <select name="base" class="form-control">
-                              <option>Product Based</option>
-                              <option>Service Based</option>
-                              <option>Both</option>
+                              <option value = 0>Product Based</option>
+                              <option value = 1>Service Based</option>
+                              <option value = 2>Both</option>
                             </select>
                        </div>
                    </div>
@@ -174,8 +174,8 @@
                        </div>
                        <div class = "col-md-3">
                            <select name="focus" class="form-control">
-                              <option>Public</option>
-                              <option>Private</option>
+                              <option value = 0>Public</option>
+                              <option value  1>Private</option>
                             </select>
                        </div>
                        <div class = "col-md-3">
@@ -183,8 +183,8 @@
                        </div>
                       <div class = "col-md-3">
                            <select name="mob" class="form-control">
-                              <option>Cloud</option>
-                              <option>Platform</option>
+                              <option value = 0>Cloud</option>
+                              <option value=1>Platform</option>
                             </select>
                        </div>
                    </div>
@@ -196,8 +196,8 @@
                        </div>
                        <div class = "col-md-3">
                            <select name="reach" class="form-control">
-                              <option>Local</option>
-                              <option>Global</option>
+                              <option value = 0>Local</option>
+                              <option value = 1>Global</option>
                             </select>
                        </div>
                     </div>
@@ -209,8 +209,8 @@
                        </div>
                       <div class = "col-md-3">
                            <select name="workcomp" class="form-control">
-                              <option>Yes</option>
-                              <option>No</option>
+                              <option value = 0>Yes</option>
+                              <option value = 1>No</option>
                             </select>
                        </div>
                        <div class = "col-md-3">
@@ -218,8 +218,8 @@
                        </div>
                       <div class = "col-md-3">
                            <select name="focconsdata" class="form-control">
-                              <option>Yes</option>
-                              <option>No</option>
+                              <option value = 0>Yes</option>
+                              <option value = 1>No</option>
                             </select>
                        </div>
                    </div>
@@ -231,8 +231,8 @@
                        </div>
                       <div class = "col-md-3">
                            <select name="crowdfund" class="form-control">
-                              <option>Yes</option>
-                              <option>No</option>
+                              <option value = 0>Yes</option>
+                              <option value = 1>No</option>
                             </select>
                        </div>
                        <div class = "col-md-3">
@@ -240,8 +240,8 @@
                        </div>
                       <div class = "col-md-3">
                            <select name="mlbusiness" class="form-control">
-                              <option>Yes</option>
-                              <option>No</option>
+                              <option value = 0>Yes</option>
+                              <option value = 1>No</option>
                             </select>
                        </div>
                    </div>
