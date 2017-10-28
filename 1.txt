@@ -1,5 +1,7 @@
 Progress as yet:
-Updated front end code for investor profile page, compnay profile
+Completed front end code for investor profile page, compnay profile
 Created Database
 Completed code for loading company profile, investor transactions, back end scripts for payment, reviews
-added sentiment analysis for trust factor, machine learning for success prediction
+added sentiment analysis for trust factor, machine learning for success prediction.
+Machine Learning Model trained for prediction with 80% accuracy acheived.
+Partial Integration of the website has been done.
