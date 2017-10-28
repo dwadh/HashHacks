@@ -184,7 +184,7 @@
          </div>
       </header>
       
-      <?php companyDetails(); ?>
+      <?php companyDetails($_GET['val']); ?>
       
 
         <!-- ==== JAVASCRIPT FILES ==== -->
