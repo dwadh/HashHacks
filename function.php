@@ -34,11 +34,8 @@ echo "  <section class='video'>
         <section class='container'>
             <div class='row'>
                <div  class='col-md-4 col-sm-12 col-xs-12'>
+                
                   <div class='row'>
-                     <img src='$logo' alt='Logo'>
-                  </div>
-                  <div class='row'>
-                     <div  class='col-md-4 col-sm-12 col-xs-12'>
                      <form action = 'formSubmit2.php' method = 'POST'>
                     <div class='form-group'>
                     <label for='userid'>User Id</label>
@@ -50,10 +47,10 @@ echo "  <section class='video'>
                     <label for='amt'>Amount</label>
                     <input type='text' class='form-control' id='amt' name = 'amt'>
                     </div>
-                    <input type = 'submit' value = 'INVEST'> </input>
+                    <input type = 'submit' class='btn btn-warning' value = 'INVEST'> </input>
+                    <a href = $link><button class='btn btn-default' type='submit'>Reviews</button></a>
                     </form>
                     </div>
-                  </div>
                </div>
                <div class='col-md-8 col-sm-12 col-xs-12'>
                   <p style = 'text-align: justify; font-size: 22px; padding: 10px;'>
@@ -84,9 +81,6 @@ echo "  <section class='video'>
                 <div class = 'col-md-4'>
             </div>
             </div>
-            <div class = 'row'>
-                <a href = $link><button class='btn btn-default' type='submit'>Reviews</button></a>
-            </div>
             </div>
             </div>
       </section>";
@@ -105,10 +99,11 @@ function investor(){
         $share = $share;
         $profit = $profit;
         
+        
         echo "
             <tbody>
                 <td>$id</td>
-                <td>$name</td>
+                <a href = $link><td>$name</td></a>
                 <td>$amt</td>
                 <td>$share</td>
                 <td>$profit</td>
@@ -118,17 +113,18 @@ function investor(){
 }
 
 function listComp(){
-    $result=json_decode(exec('python load_trans.py 1'),true);
+    $result=json_decode(exec('python comp_listing.py 1'),true);
     foreach($result as &$value)
     {
         list($id,$name)=explode("#",$value);
         $id = $id;
         $name = $name;
+        $link = 'investorCompany.php?val='.$id;
         
         echo "
             <tbody>
                 <td>$id</td>
-                <td>$name</td>
+                <td><a href = $link>$name</a></td>
             </tbody>
         ";
     }

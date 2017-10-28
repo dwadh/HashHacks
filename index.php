@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
    
+<!-- Mirrored from aya.unomiathemes.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 17 Aug 2017 06:05:51 GMT -->
 <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale = 1.0">
       <meta name="apple-mobile-web-app-capable" content="yes">
-      <meta name="description" content="aYa Agency - One Page Creative Design Template">
-      <meta name="keywords" content="aya agency, web design, creative design, html5, responsive">
-      <meta name="author" content="Tsocho Tsochev, Iliyan Konakchiev | UnomiaThemes">
       <!-- -Page Title- -->
-      <title>investorCompany</title>
+      <title>INVESTus</title>
       <!-- ====== -Google Fonts- ====== -->
       <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
       <!-- ====== -End Google Fonts- ====== -->
@@ -37,14 +35,78 @@
       <!-- -Favicon- -->
       <link rel="shortcut icon" href="img/favicon.png">
       <style>
-           
+            .video h1 {
+                  text-align: center;
+                  color: #fff;
+                  font-family: 'Dosis', sans-serif;
+                  position: absolute;
+                  z-index: 100;
+                  left: 0;
+                  top: 40%;
+                  right: 0;
+                  text-transform: uppercase;
+                  font-size: 90px;
+            }
+
+            .video img {
+                  z-index: 100;
+                  width: 200px;
+                  position: absolute;
+                  top: 25%;
+                  left: 0;
+                  right: 0;
+                  margin: 0 auto;
+            }
+
+            .video p {
+                  position: absolute;
+                  top: 60%;
+                  color: #fff;
+                  font-family: 'Dosis', sans-serif;
+                  left: 0;
+                  right: 0;
+                  width: 50%;
+                  text-align: center;
+                  margin: 0 auto;
+            }
+
+            .video {
+                  overflow: hidden;
+                  height: 100vh;
+            }
+
             body {
                   background: #1a1919;
-                color: white;
+            }
+
+            .video .btn-custom-services {
+                  position: absolute;
+                  font-family: 'Dosis', sans-serif;
+                  top: 70%;
+                  left: 0;
+                  right: 0;
+                  margin: 0 auto;
+                  width: 150px;
+                  text-align: center;
+            }
+            .up {
+                  margin-top: 40px;
             }
 
             .logo img {
                max-width: 200px;
+            }
+
+            @media screen and (max-width: 991px) {
+               .video h1 {
+                  font-size: 40px;
+               }
+
+               .video p {
+                  top: 52%;
+                  width: 85%;
+                  font-size: 14px;
+               }
             }
       </style>
    </head>
@@ -53,26 +115,22 @@
          <div class="container">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                <div class="logo">
-                  <img src="/img/logo.png" alt="Logo">
+                  <img src="img/logo.png" alt="Logo">
                </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
                <nav class="menu">
                   <ul>
-                     <li><a href="#light" data-scroll>Light</a></li>
-                     <li><a href="#dark" data-scroll>Dark</a></li>
-                     <li><a href="#alive" data-scroll>Alive Gradient</a></li>
-                     <li><a href="#404" data-scroll>404</a></li>
-                     <li><a href="#coming" data-scroll>Coming soon</a></li>
+                     <a href="/companyReg.php" ><li>Sign up</li></a>
+                     <li><a href="/companyListing.php">Companies</a></li>
+                     <li><a href="/investor.php">Investor</a></li>
                   </ul>
                </nav>
                <nav class="mobilenav">
                   <ul>
-                     <li><a href="#light" data-scroll>Light</a></li>
-                     <li><a href="#dark" data-scroll>Dark</a></li>
-                     <li><a href="#alive" data-scroll>Alive Gradient</a></li>
-                     <li><a href="#404" data-scroll>404</a></li>
-                     <li><a href="#coming" data-scroll>Coming soon</a></li>
+                      <li><a href="/companyReg.php">Sign up</a></li>
+                     <li><a href="/companyListing.php">Companies</a></li>
+                     <li><a href="/investor.php">Investor</a></li>
                   </ul>
                </nav>
                <a href="javascript:void(0)" class="icon">
@@ -85,32 +143,165 @@
             </div>
          </div>
       </header>
-      
-      <div class="container" style = "padding-top: 200px">
-        <div class="row">
-            <div class="col-md-4"> <img src="/img/investor.jpg" alt="investor picture" class="img-thumbnail"> </div>
-            <div class="col-md-8">
-                <h1 style="text-align: center">Company Name</h1>
-                <table class="table table-bordered">
-                    <thead style="font-weight: bold">
-                        <td>Id</td>
-                        <td>Company Name</td>
-                        <td>Amount Invested</td>
-                        <td>Percentage Share</td>
-                        <td>Return</td>
-                    </thead>
-                    <tbody>
-                        <td>1</td>
-                        <td>Entrinus</td>
-                        <td>20000</td>
-                        <td>20</td>
-                        <td>4000</td>
-                    </tbody>
-                </table>
+      <section class="video">
+            <div class="overlay"></div>
+            <button type="button" class="btn-custom-services" data-toggle="modal" data-target="#exampleModal">
+              Login
+            </button>
+
+      </section>
+
+      <!-- <section id="demo" style="overflow:hidden;">
+      <div class="container">
+            <h1>Light version</h1>
+            <div class="devi"></div>
+            <div class="row">
+            <div id="light" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock1.png">
+                  <span>Video Background</span>
+                  <a href="index-video-background.html" class="btn btn-custom-services">View demo</a>
             </div>
-        </div>
-    </div>
-      
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock2.png">
+                  <span>Single Parallax Background</span>
+                  <a href="index-single-parallax.html" class="btn btn-custom-services">View demo</a>
+            </div>
+      </div>
+      <div class="row up">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock3.png">
+                  <span>Slider</span>
+                  <a href="index-slider.html" class="btn btn-custom-services">View demo</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock4.png">
+                  <span>Weekly update</span>
+                  <a href="https://themeforest.net/item/aya-creative-one-page-template/20259187?ref=UnomiaThemes" class="btn btn-custom-services">BUY NOW</a>
+            </div>
+      </div>
+      </div>
+      </section>
+
+      <section  id="demo" style="overflow:hidden;">
+      <div id="dark" class="container">
+            <h1>Space Dark version</h1>
+            <div class="devi"></div>
+            <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock7.png">
+                  <span>Video Background</span>
+                  <a href="index-dark-video.html" class="btn btn-custom-services">View demo</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock8.png">
+                  <span>Single Parallax Background</span>
+                  <a href="index-dark-single-parallax.html" class="btn btn-custom-services">View demo</a>
+            </div>
+      </div>
+      <div class="row up">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock9.png">
+                  <span>Slider</span>
+                  <a href="index-dark-slider.html" class="btn btn-custom-services">View demo</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock4.png">
+                  <span>Weekly update</span>
+                  <a href="https://themeforest.net/item/aya-creative-one-page-template/20259187?ref=UnomiaThemes" class="btn btn-custom-services">BUY NOW</a>
+            </div>
+      </div>
+      </div>
+      </section>
+      <section id="demo" style="overflow:hidden;">
+      <div id="alive" class="container">
+            <h1>Alive Gradient version</h1>
+            <div class="devi"></div>
+            <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock10.png">
+                  <span>Video Background</span>
+                  <a href="index-alive-video.html" class="btn btn-custom-services">View demo</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock5.png">
+                  <span>Single Parallax Background</span>
+                  <a href="index-alive-single-parallax.html" class="btn btn-custom-services">View demo</a>
+            </div>
+      </div>
+      <div class="row up">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock11.png">
+                  <span>Slider</span>
+                  <a href="index-alive-slider.html" class="btn btn-custom-services">View demo</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock4.png">
+                  <span>Weekly update</span>
+                  <a href="https://themeforest.net/item/aya-creative-one-page-template/20259187?ref=UnomiaThemes" class="btn btn-custom-services">BUY NOW</a>
+            </div>
+      </div>
+      </div>
+      </section>
+       <section id="demo" style="overflow:hidden;">
+      <div id="404" class="container">
+            <h1>Error 404 Page Template</h1>
+            <div class="devi"></div>
+            <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock13.png">
+                  <span>Video Background</span>
+                  <a href="404.html" class="btn btn-custom-services">View demo</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock12.png">
+                  <span>Single Parallax Background</span>
+                  <a href="404-single-image.html" class="btn btn-custom-services">View demo</a>
+            </div>
+      </div>
+      </div>
+      </section>
+      <section id="demo" style="overflow:hidden;">
+      <div id="coming" class="container">
+            <h1>Coming Soon Template</h1>
+            <div class="devi"></div>
+            <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock-cs1.png">
+                  <span>Light Video Background</span>
+                  <a href="coming-soon.html" class="btn btn-custom-services">View demo</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock-cs2.png">
+                  <span>Light Parallax Background</span>
+                  <a href="coming-soon-single.html" class="btn btn-custom-services">View demo</a>
+            </div>
+      </div>
+      <div class="row up">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock-cs3.png">
+                  <span>Dark Video Background</span>
+                  <a href="coming-soon-dark.html" class="btn btn-custom-services">View demo</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock-cs4.png">
+                  <span>Dark Parallax Background</span>
+                  <a href="coming-soon-dark-single.html" class="btn btn-custom-services">View Demo</a>
+            </div>
+      </div>
+      <div class="row up">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock-cs5.png">
+                  <span>Alive Video Background</span>
+                  <a href="coming-soon-alive.html" class="btn btn-custom-services">View demo</a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                  <img src="mock-cs6.png">
+                  <span>Alive Parallax Background</span>
+                  <a href="coming-soon-alive-single.html" class="btn btn-custom-services">View Demo</a>
+            </div>
+      </div>
+      </div>
+      </section> -->
         <!-- ==== JAVASCRIPT FILES ==== -->
       <!-- Jquery -->
       <script src="js/jquery-2.2.4.min.js"></script>

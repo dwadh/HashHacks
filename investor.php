@@ -57,20 +57,16 @@
             <div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
                <nav class="menu">
                   <ul>
-                     <li><a href="#light" data-scroll>Light</a></li>
-                     <li><a href="#dark" data-scroll>Dark</a></li>
-                     <li><a href="#alive" data-scroll>Alive Gradient</a></li>
-                     <li><a href="#404" data-scroll>404</a></li>
-                     <li><a href="#coming" data-scroll>Coming soon</a></li>
+                     <a href="/companyReg.php" ><li>Sign up</li></a>
+                     <li><a href="/companyListing.php">Companies</a></li>
+                     <li><a href="/investor.php">Investor</a></li>
                   </ul>
                </nav>
                <nav class="mobilenav">
                   <ul>
-                     <li><a href="#light" data-scroll>Light</a></li>
-                     <li><a href="#dark" data-scroll>Dark</a></li>
-                     <li><a href="#alive" data-scroll>Alive Gradient</a></li>
-                     <li><a href="#404" data-scroll>404</a></li>
-                     <li><a href="#coming" data-scroll>Coming soon</a></li>
+                      <li><a href="/companyReg.php">Sign up</a></li>
+                     <li><a href="/companyListing.php">Companies</a></li>
+                     <li><a href="/investor.php">Investor</a></li>
                   </ul>
                </nav>
                <a href="javascript:void(0)" class="icon">
