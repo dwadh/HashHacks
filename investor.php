@@ -51,7 +51,7 @@
          <div class="container">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
                <div class="logo">
-                  <img src="/img/logo.png" alt="Logo">
+                  <img src="img/logo.png" alt="Logo">
                </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
@@ -86,13 +86,14 @@
       
       <div class="container" style = "padding-top: 200px">
         <div class="row">
-            <div class="col-md-4"> <img src="/img/investor.jpg" alt="investor picture" class="img-thumbnail"> </div>
+            <div class="col-md-4"> <img src="img/investor.jpg" alt="investor picture" class="img-thumbnail"> </div>
             <div class="col-md-8">
                 <h1 style="text-align: center">Company Name</h1>
                 <table class="table table-bordered">
                     <thead style="font-weight: bold">
                         <td>Id</td>
                         <td>Company Name</td>
+                        <td></td>
                         <td>Amount Invested</td>
                         <td>Percentage Share</td>
                         <td>Return</td>
