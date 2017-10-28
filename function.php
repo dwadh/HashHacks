@@ -39,12 +39,12 @@ echo "  <section class='video'>
 }
 
 function investor(){
-    $result=json_decode(exec('load_trans.py'),true);
+    $result=json_decode(exec('python load_trans.py 1'),true);
     foreach($result as &$value)
     {
-        list($id,$cid,$uid, $amt, $share, $profit, $name)=explode("#",$value);
+        list($id,$cid,$uid, $amt, $share, $date, $profit, $name)=explode("#",$value);
         $id = $id;
-        $name = $name;
+        $name = $cid;
         $cid = $cid;
         $uid = $uid;
         $amt = $amt;
